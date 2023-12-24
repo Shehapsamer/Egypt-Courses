@@ -302,6 +302,9 @@ p{
   justify-content: center;
   text-align: center;
   z-index: 1;
+  animation-name: tranzs;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
 }
 .S1_home::after{
   content: '';
@@ -330,6 +333,19 @@ p{
   background-color: var(--btnColor);
   padding: 10px 30px ;
   border-radius: 5px;
+}
+@keyframes tranzs {
+  0% {
+    background-size: 100%;
+  }
+
+  50% {
+    background-size: 120%;
+  }
+
+  100% {
+    background-size: 140%;
+  }
 }
 /* intro */
 .intro {
@@ -439,9 +455,11 @@ p{
 }
 .S5_home .box{
   padding: 30px;
-  border: 2px solid var(--btnColor);
   border-radius: 5px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .S5_home .box h4{
   color: var(--btnColor);
@@ -456,6 +474,7 @@ p{
   display: block;
   font-weight: 600;
   font-size: 22px;
+  margin-bottom: 40px;
 }
 .S5_home .box a{
   padding: 10px 30px;
@@ -464,8 +483,7 @@ p{
   border-radius: 5px;
   color: var(--body_bgColor);
   transition: all ease-in .3s;
-  display: block;
-  margin: 20px 0;
+  text-align: center;
 }
 .S5_home .box a:hover{
   background-color: transparent;
@@ -1097,20 +1115,50 @@ p{
 .cart_page_contant{
   padding: 20px 0 ;
 }
+/* blog_catt */
+.blog_catt img{
+  border-radius: 5px !important ;
+  width: 100%;
+  padding: 0 !important;
+  margin-bottom: 20px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.blog_catt .blog_box{
+  padding: 0;
+  margin: 40px 0;
+  text-align: center;
+}
+.owl-nav{
+  text-align: center;
+}
+.owl-nav .owl-prev ,.owl-nav .owl-next{
+  padding: 5px ;
+  border-radius: 5px;
+  background-color: var(--Secondary-color);
+  color: var(--body_bgColor);
+  margin-left: 10px;
+}
+/* products */
+.products{
+  padding: 70px 0;
+}
+.products img{
+  height: 200px !important;
+  border-radius: 5px;
+}
+.products h3{
+  margin: 20px 0;
+  margin-bottom: 30px;
+}
+.products a{
+  padding: 10px 30px;
+  background-color: var(--btnColor);
+  color: var(--body_bgColor);
+  border-radius: 5px;
+}
+.products .box{
+  padding: 25px;
+}
  /* media */
  @media screen and (min-width:1px) and (max-width:767px){
   h1 {

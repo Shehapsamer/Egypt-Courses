@@ -43,3 +43,38 @@ close_cart.addEventListener("click", function () {
     cart_sidbar.classList.remove("Show2")
 })
 // //////////////
+
+// ////////////////////////////////////////////
+var owl = $('#slider_1');
+owl.owlCarousel({
+    items:4, 
+  // items change number for slider display on desktop
+  
+    loop:true,
+    margin:10,
+    navigation: true,
+    autoplay: true,
+    smartSpeed: 800,
+    rtl:true,
+    nav: true,
+    navElement: "dots",
+    navText:[`<i class="fa-solid fa-chevron-right"></i>` , `<i class="fa-solid fa-chevron-left"></i>`],
+    paginationSpeed : 800,
+    dots: true,  
+    dotsEach:true,
+    responsive:{
+        0:{
+            items: 1,
+        },
+        600:{
+            items: 2,
+        },
+        1100:{
+            items: 4,
+        },
+        1200:{
+            items:4
+        }
+    }
+});
+// /////////
